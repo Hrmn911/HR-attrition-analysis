@@ -1,28 +1,81 @@
-# HR attrition analysis
-Machine Learning-based HR Attrition Prediction System with Streamlit deployment
-It is a machine learning web application that predicts whether an employee is likely to stay or leave an organization based on key HR factors.
+ 🏢 HR Attrition Analysis & Prediction System: 
 
-The system is built using Logistic Regression and deployed using Streamlit, providing real-time predictions with probability scores.
+This project is a machine learning-based web application that analyzes employee data and predicts the likelihood of employee attrition. It is designed to help understand key workforce patterns and demonstrate an end-to-end ML pipeline from data processing to deployment.
 
-📊 Key Features:
-Data preprocessing and feature engineering on HR dataset
-Exploratory Data Analysis (EDA) with visual insights
-Logistic Regression model with class balancing
-Prediction with probability scoring
-Risk classification (Low / Medium / High)
-Interactive Streamlit web application
+ 🎯 Objective: 
 
-🧠 Key Factors Influencing Attrition Overtime:
-Business Travel frequency
-Job satisfaction
-Work-life balance
-Distance from home
-Years at company
-Promotion history
+The goal of this project is to explore how machine learning can be used to identify employees who may be at risk of leaving an organization and understand the factors influencing attrition behavior.
 
-📈 Model Performance: 
-Accuracy: ~75%
-ROC-AUC: ~0.80
+ ⚙️ Project Workflow: 
 
-🛠 Tech Stack:
-Python, Pandas, Scikit-learn, Matplotlib, Seaborn, Streamlit, Joblib
+The project follows a complete ML pipeline:
+
+Data Collection → Data Cleaning → Exploratory Data Analysis → Feature Engineering → Model Training → Evaluation → Deployment
+
+📊 Dataset Overview: 
+
+The dataset contains HR-related attributes such as:
+
+- Age
+- Monthly Income
+- Overtime
+- Business Travel
+- Job Role
+- Years at Company
+- Work-Life Balance
+- Job Satisfaction
+
+ 🧠 Machine Learning Approach: 
+
+- Model Used: Logistic Regression
+- Handling Imbalance: Class Weight Balancing
+- Feature Encoding: One-Hot Encoding
+- Scaling: StandardScaler
+
+The model outputs a probability score indicating the likelihood of attrition.
+
+ 📈 Evaluation Metrics: 
+
+- Accuracy: ~75%
+- ROC-AUC Score: ~0.80
+- Confusion Matrix used for performance analysis
+
+ 🌐 Web Application: 
+
+The model is deployed using Streamlit, providing an interactive interface where users can input employee details and get real-time predictions.
+
+🔗 Live Demo:  
+https://hr-attrition-analysis-ebypupeuruvpyw88qmbjjm.streamlit.app/
+
+💡 Key Insights: 
+
+The model shows that employee attrition is strongly influenced by:
+
+- Work pressure (overtime)
+- Frequent business travel
+- Job satisfaction level
+- Work-life balance
+- Tenure in the company
+
+🛠 Tech Stack: 
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Streamlit
+- Joblib
+
+🚀 Project Structure: 
+app_2.py # Streamlit application
+model.pkl # Trained ML model
+scaler.pkl # Feature scaler
+features.pkl # Feature columns
+HR-Employee-Attrition.csv
+
+👨‍💻 Author
+
+Harmandeep Singh  
+GitHub: https://github.com/Hrmn911/HR-attrition-analysis.git
