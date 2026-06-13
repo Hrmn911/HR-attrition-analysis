@@ -1,6 +1,6 @@
 # HR attrition analysis
 Machine Learning-based HR Attrition Prediction System with Streamlit deployment
-Ti is a machine learning web application that predicts whether an employee is likely to stay or leave an organization based on key HR factors.
+It is a machine learning web application that predicts whether an employee is likely to stay or leave an organization based on key HR factors.
 
 The system is built using Logistic Regression and deployed using Streamlit, providing real-time predictions with probability scores.
 
